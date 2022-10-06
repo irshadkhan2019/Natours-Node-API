@@ -1,0 +1,1045 @@
+{
+	"info": {
+		"_postman_id": "d7e14591-1dd0-4d42-9798-fc3932a13300",
+		"name": "Natours Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Tours",
+			"item": [
+				{
+					"name": "Get A Tour",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:3000/api/v1/tours/5c88fa8cf4afda39709c2955",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"tours",
+								"5c88fa8cf4afda39709c2955"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Tours",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/api/v1/tours/",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"tours",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insert a tour",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\": \"5c88fa8cf4afda39709c2955\",\r\n    \"startLocation\": {\r\n        \"description\": \"Miami, USA\",\r\n        \"type\": \"Point\",\r\n        \"coordinates\": [\r\n            -80.185942,\r\n            25.774772\r\n        ],\r\n        \"address\": \"301 Biscayne Blvd, Miami, FL 33132, USA\"\r\n    },\r\n    \"ratingsAverage\": 4.8,\r\n    \"ratingsQuantity\": 6,\r\n    \"images\": [\r\n        \"tour-2-1.jpg\",\r\n        \"tour-2-2.jpg\",\r\n        \"tour-2-3.jpg\"\r\n    ],\r\n    \"startDates\": [\r\n        \"2021-06-19T09:00:00.000Z\",\r\n        \"2021-07-20T09:00:00.000Z\",\r\n        \"2021-08-18T09:00:00.000Z\"\r\n    ],\r\n    \"name\": \"The Sea Explorer\",\r\n    \"duration\": 7,\r\n    \"maxGroupSize\": 15,\r\n    \"difficulty\": \"medium\",\r\n    \"guides\": [\r\n        \"5c8a22c62f8fb814b56fa18b\",\r\n        \"5c8a1f4e2f8fb814b56fa185\"\r\n    ],\r\n    \"price\": 497,\r\n    \"summary\": \"Exploring the jaw-dropping US east coast by foot and by boat\",\r\n    \"description\": \"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\\nIrure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\",\r\n    \"imageCover\": \"tour-2-cover.jpg\",\r\n    \"guides\": [\r\n        \"632fc939448811fa3eada12b\",\r\n        \"6331134b084ad6799539e246\"\r\n    ],\r\n    \"locations\": [\r\n        {\r\n            \"_id\": \"5c88fa8cf4afda39709c2959\",\r\n            \"description\": \"Lummus Park Beach\",\r\n            \"type\": \"Point\",\r\n            \"coordinates\": [\r\n                -80.128473,\r\n                25.781842\r\n            ],\r\n            \"day\": 1\r\n        },\r\n        {\r\n            \"_id\": \"5c88fa8cf4afda39709c2958\",\r\n            \"description\": \"Islamorada\",\r\n            \"type\": \"Point\",\r\n            \"coordinates\": [\r\n                -80.647885,\r\n                24.909047\r\n            ],\r\n            \"day\": 2\r\n        },\r\n        {\r\n            \"_id\": \"5c88fa8cf4afda39709c2957\",\r\n            \"description\": \"Sombrero Beach\",\r\n            \"type\": \"Point\",\r\n            \"coordinates\": [\r\n                -81.0784,\r\n                24.707496\r\n            ],\r\n            \"day\": 3\r\n        },\r\n        {\r\n            \"_id\": \"5c88fa8cf4afda39709c2956\",\r\n            \"description\": \"West Key\",\r\n            \"type\": \"Point\",\r\n            \"coordinates\": [\r\n                -81.768719,\r\n                24.552242\r\n            ],\r\n            \"day\": 5\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/api/v1/tours/",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"tours",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update A tour",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\"startLocation\": {\r\n    \"description\": \"Banff, CAN\",\r\n    \"type\": \"Point\",\r\n    \"coordinates\": [\r\n        -115.570154,\r\n        51.178456\r\n    ],\r\n    \"address\": \"224 Banff Ave, Banff, AB, Canada\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/api/v1/tours/632e9d44c757ce6f7ab5f7e0",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"tours",
+								"632e9d44c757ce6f7ab5f7e0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete A tour",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMmZjOTM5NDQ4ODExZmEzZWFkYTEyYiIsImlhdCI6MTY2NDA3NjA4OSwiZXhwIjoxNjY0ODUzNjg5fQ.wBHAJ1YqCG9aGRVe7DF_IVa8ozWZf1kAo5CvIAhsyjM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "127.0.0.1:3000/api/v1/tours/632e9d44c757ce6f7ab5f7de",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"tours",
+								"632e9d44c757ce6f7ab5f7de"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "Bearer ",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Tours(sort,fields,paginate)",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/api/v1/tours/?sort=price,-ratingsAverage&fields=name,rating, price&page=2&limit=2",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"tours",
+								""
+							],
+							"query": [
+								{
+									"key": "sort",
+									"value": "price,-ratingsAverage"
+								},
+								{
+									"key": "fields",
+									"value": "name,rating, price"
+								},
+								{
+									"key": "page",
+									"value": "2"
+								},
+								{
+									"key": "limit",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Tours (Filtered )",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/api/v1/tours/?ratingsAverage[gt]=4.6",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"tours",
+								""
+							],
+							"query": [
+								{
+									"key": "ratingsAverage[gt]",
+									"value": "4.6"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Top 5 Cheap Tours",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:3000/api/v1/tours/top-5-cheap-tour/",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"tours",
+								"top-5-cheap-tour",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Tours Statistics",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:3000/api/v1/tours/tour-stats",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"tours",
+								"tour-stats"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Review for a tour",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMzExMzRiMDg0YWQ2Nzk5NTM5ZTI0NiIsImlhdCI6MTY2NDE2NTEwOSwiZXhwIjoxNjY0OTQyNzA5fQ.ekkWuZaNLPbtpwNXzdOsEuSh7GtqTZSCL3FGsnwnxAA",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"review\": \"This tour is an  avg tour !!!\",\r\n    \"rating\": 3\r\n   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/api/v1/tours/5c88fa8cf4afda39709c2955/reviews/",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"tours",
+								"5c88fa8cf4afda39709c2955",
+								"reviews",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Tours Within Sphere",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:3000/api/v1/tours/tours-within/400/center/34.111745,-118.113491/unit/mi",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"tours",
+								"tours-within",
+								"400",
+								"center",
+								"34.111745,-118.113491",
+								"unit",
+								"mi"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get tours Distance from current user location",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:3000/api/v1/tours/distances/34.111745,-118.113491/unit/km",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"tours",
+								"distances",
+								"34.111745,-118.113491",
+								"unit",
+								"km"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Get all users",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMzExMzRiMDg0YWQ2Nzk5NTM5ZTI0NiIsImlhdCI6MTY2NDE2MDU4OCwiZXhwIjoxNjY0OTM4MTg4fQ.MYRpP1V0XjjSlrtimk27cb0BMh1BUHwPNDnJ8vxJZJE",
+								"type": "default"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "127.0.0.1:3000/api/v1/users/",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get A user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:3000/api/v1/users/2",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update user",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"role\":\"admin\"\r\n   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/api/v1/users/632fc939448811fa3eada12b",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"632fc939448811fa3eada12b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create user (signUp)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Tanjiro\",\r\n    \"email\":\"tanjiro@gmail.com\",\r\n    \"password\":\"password@123\",\r\n    \"passwordConfirm\":\"password@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/api/v1/users/signup",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete user",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:3000/api/v1/users/2",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"tanjiro@gmail.com\",\r\n    \"password\":\"password@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/api/v1/users/login",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Forgot password ",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"asta@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/api/v1/users/forgotPassword",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"forgotPassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RESET PASSWORD(specify token ,and password)",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"password\":\"Password@321\",\r\n    \"passwordConfirm\":\"Password@321\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/api/v1/users/resetPassword/2875e85ceb08b7dda3d95e06e94d7ecd5c3fb468f16c42a46eea4acb9222c4b5",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"resetPassword",
+								"2875e85ceb08b7dda3d95e06e94d7ecd5c3fb468f16c42a46eea4acb9222c4b5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Password of logged in user(BEarer token)",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMmZjOTM5NDQ4ODExZmEzZWFkYTEyYiIsImlhdCI6MTY2NDA4Nzc4OCwiZXhwIjoxNjY0ODY1Mzg4fQ.i5TxbIjLjP8suBPocM_ccWuhN4MU4tgI2s2_PlcY4y4",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \"passwordCurrent\":\"Password@321\",\r\n    \"password\":\"Password@123\",\r\n    \"passwordConfirm\":\"Password@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/api/v1/users/updateMyPassword/",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"updateMyPassword",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update data of logged in user",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMmZjOTM5NDQ4ODExZmEzZWFkYTEyYiIsImlhdCI6MTY2NDE2MTU5NSwiZXhwIjoxNjY0OTM5MTk1fQ.x7DzRuzu5lRttTwX7N6USVxtcTGHsWNHScBptynz77Q",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Asta\",\r\n    \"email\":\"asta@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/api/v1/users/updateMe",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"updateMe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete ME (Logged in user)",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMmZjOTM5NDQ4ODExZmEzZWFkYTEyYiIsImlhdCI6MTY2NDA4OTYwOCwiZXhwIjoxNjY0ODY3MjA4fQ.769ojGkAvVDF9AdmE4HVy9BHyzUcAfx_uGmHjQoYdZs",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "127.0.0.1:3000/api/v1/users/deleteMe",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"deleteMe"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Errors",
+			"item": [
+				{
+					"name": "Unhandled route error check",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:3000/api/v1/tours/top-5-cheap-tour/asdjhkasd",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"tours",
+								"top-5-cheap-tour",
+								"asdjhkasd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Operational error check",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"secretTour\": false,\r\n    \"name\": \"The pirate king explorer\",\r\n    \"maxGroupSize\": 15,\r\n    \"difficulty\": \"medium\",\r\n    \"ratingsAverage\": 4.8,\r\n    \"ratingsQuantity\": 23,\r\n    \"price\": 500,\r\n    \"summary\": \"Exploring the pirate king\",\r\n    \"description\": \"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\\nIrure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\",\r\n    \"imageCover\": \"tour-2-cover.jpg\",\r\n    \"images\": [\r\n        \"tour-2-1.jpg\",\r\n        \"tour-2-2.jpg\",\r\n        \"tour-2-3.jpg\"\r\n    ],\r\n    \"startDates\": [\r\n        \"2022-06-19T04:30:00.000Z\",\r\n        \"2022-07-20T04:30:00.000Z\",\r\n        \"2022-08-18T04:30:00.000Z\"\r\n    ],\r\n    \"durationWeeks\": 1\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/api/v1/tours/",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"tours",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Invalid tour  ID search error",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:3000/api/v1/tours/akg127356g876asdnmb",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"tours",
+								"akg127356g876asdnmb"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Duplicate name error",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"secretTour\": false,\r\n    \"name\": \"The pirate king explorer\",\r\n    \"duration\": 7,\r\n    \"maxGroupSize\": 15,\r\n    \"difficulty\": \"medium\",\r\n    \"ratingsAverage\": 4.8,\r\n    \"ratingsQuantity\": 23,\r\n    \"price\": 500,\r\n    \"summary\": \"Exploring the pirate king\",\r\n    \"description\": \"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\\nIrure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\",\r\n    \"imageCover\": \"tour-2-cover.jpg\",\r\n    \"images\": [\r\n        \"tour-2-1.jpg\",\r\n        \"tour-2-2.jpg\",\r\n        \"tour-2-3.jpg\"\r\n    ],\r\n    \"startDates\": [\r\n        \"2022-06-19T04:30:00.000Z\",\r\n        \"2022-07-20T04:30:00.000Z\",\r\n        \"2022-08-18T04:30:00.000Z\"\r\n    ],\r\n    \"durationWeeks\": 1\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/api/v1/tours/",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"tours",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mongoose validation error",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"difficulty\":\"Ultra hard\",\r\n    \"name\":\"aloo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/api/v1/tours/632ea7ad59870d98bd25c675",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"tours",
+								"632ea7ad59870d98bd25c675"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reviews",
+			"item": [
+				{
+					"name": "Get all reviews( for all tours)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:3000/api/v1/reviews",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"reviews"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create review",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"review\": \"This tour is awesome !!!\",\r\n    \"rating\": 5,\r\n    \"user\": \"632fc939448811fa3eada12b\",\r\n    \"tour\": \"5c88fa8cf4afda39709c2955\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/api/v1/reviews/",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"reviews",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a Review",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:3000/api/v1/reviews/63311a578a6a4bb4ad662e73",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"reviews",
+								"63311a578a6a4bb4ad662e73"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all review for a particular tour",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:3000/api/v1/tours/5c88fa8cf4afda39709c295a/reviews",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"tours",
+								"5c88fa8cf4afda39709c295a",
+								"reviews"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
